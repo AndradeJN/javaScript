@@ -1,0 +1,15 @@
+Variáveis
+
+Data types:
+*  Number
+     Infinite
+     NaN
+
+* String
+* Boolean
+* null
+* undefined
+* object 
+    Array
+
+* function
