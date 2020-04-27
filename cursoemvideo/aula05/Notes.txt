@@ -1,6 +1,6 @@
 Variáveis
 
-Data types:
+Data types
 *  Number
      Infinite
      NaN
