@@ -16,9 +16,12 @@
 <body>
     
     <script>
-        var name = window.prompt('Escreva o seu nome')
-        document.write(`Olá <strong>${name.toUpperCase()}</strong>, seu nome tem: ${name.length} letras`)
+        var name = window.prompt('Escreva o seu nome: ')
+        var salario = window.prompt('Escerva um valor ente acima de 1000: ')
 
+        document.write(`Olá <strong>${name.toUpperCase()}</strong>, seu nome tem: ${name.length} letras</br>`)
+        document.write(`Você merece <strong>${Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(salario)} </strong>de salário`)
+        
     </script>
 </body>
 </html>
