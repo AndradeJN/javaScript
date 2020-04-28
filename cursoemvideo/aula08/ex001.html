@@ -16,14 +16,41 @@
         var b = 8
         var c = '8'
 
-        a > b   >> false     // a aior que b
+        a > b   >> false     // a maior que b
         a < b   >> false    // a menor que b
         a >= b  >> true    // a maior ou igual b
         a <= b  >> true   // a menor ou igual b
         a == b  >> true      // a exatamente ihual b
         a != b  >> false    // a diferente de b
         a == c  >> true    // a igual a c
-        a === c >> false  // a igual em valor e tipo a c
+        a === c >> false  // a idêntico c
+        a !== b >> false // a desigual restrito de b
 
+        /**
+         * Operadore lógicos
+         * 
+         * ! negação
+         * && conjunção
+         * || disjunção
+         *
+         * Precedência, I, &&, ||
+         * 
+         **/
+
+        true && true >>> true
+        true && false >>> false
+        false || false >>> false
+        false || true >>> true
+
+        /**
+        * Terário
+        * teste ? true : false
+        **/
+
+        a = 5
+
+        a > 3 ? "sim" : 'não' //Para esse caso a resposta é "sim"
+        a <= 3 ? 'logico' : 'ops' // Para esse caso a resposta é 'ops'
+        
     </script>
 </html>
