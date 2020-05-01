@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    
+    Nome do país: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="nation()">
+
+    <div id="res">a</div>
+
+    <script>
+        function nation(){
+            var  pais = document.getElementById('nac')
+            var res = document.querySelector('div#res')
+            nat = pais.value
+
+            if (nat == 'Brasil' || 'brasil') {
+                res.innerHTML = (`Basileiro`)
+            }else{
+                res.innerHTML = (`Estrangeiro`)
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Velocidade permitida na via: 60 km/h</p>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> <Km>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+
+        function calcular(){
+            var vel = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var velocity = Number(vel.value)
+            
+
+            res.innerHTML = (`<p>Sua velocidade é de <strong>${velocity}</strong> Km/h</p>`)
+            
+
+            if (velocity > 60 + (60* 0.1)) {
+                if (velocity > 60 + (60 * 0.2)){
+                    if(velocity > 60 + (60 * 0.5)){
+                        res.innerHTML += ("Multa gravissima x2 por ecxeder a volocidade permitida em mais de 50%")
+                        return(0)
+                    }
+                    res.innerHTML += ("Multa gravissima por ecxeder a volocidade permitida em até 50%")
+                    return(0)
+                }  
+                res.innerHTML += ("Multa grave por ecxeder a volocidade permitida em até 20%")
+            }
+        }
+    </script>
+</body>
+</html>
